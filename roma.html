@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roma</title>
+    
+</head>
+<body>
+    <style>
+        body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4e4e4;
+}
+header {
+    width: 100%;
+    height: 120px;
+    background-color: rgb(88, 88, 88);
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;   
+}
+h1 {
+    color: #ffffff;
+    font-size: 90px;
+
+}
+.fg {
+
+
+    display: flex;
+    justify-content: space-between;
+  height: 20px;
+}
+
+.v, .b, .c {
+    text-decoration: none;
+   background-color: rgb(88, 88, 88);
+    width: 40%;
+    height: 70px;
+
+margin-top: 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 0.3s ease;
+color: rgb(255, 255, 255);
+}
+.v:hover {
+    background-color: rgb(71, 71, 71);
+    color: rgb(138, 138, 138);
+}
+.b:hover {
+    background-color: rgb(71, 71, 71);
+    color: rgb(138, 138, 138);
+}
+.c:hover {
+    background-color: rgb(71, 71, 71);
+    color: rgb(138, 138, 138);
+}
+.dev {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.biografia {
+    background-color: #b4b4b4;
+    width: 40%;
+    margin-left: 30px;
+   border-radius: 15px;
+   margin-top: -280px;
+}
+.odin, .text {
+    max-width: 80%; 
+    font-size: 17px;
+}
+.bv {
+     display: flex;
+    justify-content: center;
+}
+.odin {
+    font-size: 20px;
+}
+img {
+    border-radius: 15px;
+}
+.interesi {
+      background-color: #333333;
+    width: 40%;
+    margin-left: 30px;
+   border-radius: 15px;
+margin-left: 760px;
+color: aliceblue;
+margin-top: -280px;
+}
+.avtor {
+    background-color: #b4b4b4;
+    width: 40%;
+    margin-left: 30px;
+   border-radius: 15px;
+   margin-top: -200px;
+}
+footer {
+    background-color: #333333;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+    </style>
+    <header>
+        <h1>РОМА</h1>
+    </header>
+      <div class="fg">
+            
+<p onclick="scrollToDiv('div1')" class="v">БИОГРАФИЯ</p>
+<p onclick="scrollToDiv('div2')" class="c">ИНТЕРЕСЫ</p>
+<p onclick="scrollToDiv('div3')" class="b">АВТОР САЙТА</p>
+        </div>
+<br>
+<br>
+<br>
+<div id="div1" class="dev">
+<h2>БИОГРАФИЯ</h2>
+</div>
+
+
+
+
+<img src="roma.jpg" alt="" width="300px" style="margin-left: 800px;">
+<div class="biografia">
+    <div class="bv">
+<p class="odin">Рома или как некоторые называют - "ослоёб"</p></div>
+ <div class="bv"><p class="text">Рома - легенда, ему 16 лет, проживает в стране Словакия, и он крутой тип. Он находится в крутом чате "Одмен чата умир" и принимает там активное участие!!! Он слегка туповат но одновременно и умный. Раньше он жил сам в общаге, но сейчас он снимает квартиру с Мамой и живет в кайф. Еще он был в Египте и многих других странах. В общем как друг он 6/10, прикольный.
+</p></div>
+</div>
+<br>
+<br>
+<br>
+<div id="div2" class="dev">
+<h2>ИНТЕРЕСЫ</h2>
+</div>
+<img src="samokat.jpg" alt="" width="300px" style="margin-left: 100px;">
+<div class="interesi">
+    <div class="bv">
+<p class="odin">Интересы у Романа очень крутые</p></div>
+ <div class="bv"><p class="text"> Ему нравится кататься на его крутом самокате. Любит общаться с нами в чатике. Недавно из-за другого чела с группы (Coolfire), У Романа появился интерес делать ставки и хочет этому научится. Еще он работал доставщиком и вроде ему нравилось. Кстати еще раньше он хотел найти общение с людьми с помощью дайвинчика, но щас вроде перестал потому что там одни шлюхи
+</p></div>
+</div>
+<br>
+<br>
+<br>
+<div id="div3" class="dev">
+<h2>АВТОР САЙТА</h2>
+</div>
+
+
+<img src="matvey.jpg" alt="" width="400px" style="margin-left: 800px;">
+<div class="avtor">
+    <div class="bv">
+<p class="odin">Матвей</p></div>
+ <div class="bv"><p class="text">Самый ахуенный и крутой программист который создал этот заебатый сайт
+</p></div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<script>
+function scrollToDiv(id) {
+  const element = document.getElementById(id);
+  element.scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+<footer>&copy; 2025 Roma </footer>
+</body>
+</html>
